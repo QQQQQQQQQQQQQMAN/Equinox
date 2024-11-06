@@ -32,13 +32,13 @@ jobs:
         run: "npm install"
 
       - name: Build step
-        run: "npm run"
+        run: "npm run build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "qqqqqqqqqqq-equinox-16"
           entrypoint: "index.js"
-          root: "out"
+          root: "build"
           
           
